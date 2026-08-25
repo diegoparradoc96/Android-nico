@@ -5,10 +5,10 @@ import { AppTheme } from '../context';
 import { TableCard } from '../components';
 
 
-export const Home = () => {
+export const Tables = () => {
     const theme = useTheme<AppTheme>();
 
-    const tables = [1, 2, 3];
+    const tables = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
     /**
     * Componente visual que informa los estado o modos para una tabla.
@@ -35,12 +35,6 @@ export const Home = () => {
     return (
         <View style={{ ...styles.container, backgroundColor: theme.colors.background }}>
             {tableModes()}
-            {/* <View style={styles.cardsContainer}>
-                <TableCard  />
-                <TableCard />
-                <TableCard />
-            </View> */}
-
             <FlatList
                 data={tables}
                 numColumns={2}
